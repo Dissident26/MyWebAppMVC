@@ -1,0 +1,23 @@
+﻿@model DogViewModel;
+
+<h1>Vet Application</h1>
+
+<form method="post" style="display: flex; justify-content: flex-start; align-items: center; gap: 8px; flex-direction: column;">
+    <div>
+        <label>Name: </label>
+        <input asp-for="Name"/>
+    </div>
+    <div>
+        <label>Age: </label>
+        <input asp-for="Age"/>
+    </div>
+    <div>
+        <label>Weight: </label>
+        <input asp-for="Weight"/>
+    </div>
+    <div>
+        <label>Owner Name: </label>
+        <input asp-for="OwnerName"/>
+    </div>
+    <button type="submit">SUBMIT</button>
+</form>
