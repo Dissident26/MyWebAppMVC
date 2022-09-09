@@ -1,0 +1,20 @@
+﻿@{
+    var fishList = ViewData["FishList"] as List<FishModel>;
+}
+
+<h1>Fish list using viewData: </h1>
+<ul>
+    @if (fishList == null)
+    {
+        <li>No Data Found</li>
+    } else
+    {
+            @foreach(FishModel fish in fishList){
+        <li>
+            <p>Name: @fish.Name</p>
+            <p>Weigh: @fish.Weight</p>
+            <p>Seed: @fish.Speed</p>
+        </li>
+    }
+    }
+</ul>

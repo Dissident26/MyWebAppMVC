@@ -1,0 +1,14 @@
+﻿@{
+    List<FishModel> fishList = ViewBag.FishList;
+}
+
+<h1>Fish list using viewBag: </h1>
+<ul>
+    @foreach(FishModel fish in fishList){
+        <li>
+            <p>Name: @fish.Name</p>
+            <p>Weigh: @fish.Weight</p>
+            <p>Seed: @fish.Speed</p>
+        </li>
+    }
+</ul>
